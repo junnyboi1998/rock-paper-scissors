@@ -3,6 +3,7 @@
 let playerScore = 0;
 let computerScore = 0;
 
+// Generate a random Computer Play
 function computerPlay() {
   const randomNumber = Math.trunc(Math.random() * 3 + 1);
   let computerPlayResult;
@@ -15,6 +16,7 @@ function computerPlay() {
   }
 }
 
+// Play a single round of Rock, Paper & Scissors
 function playRound(playerSelection, computerSelection) {
   const playerResult = playerSelection.toUpperCase();
   let playRoundResult;
@@ -35,6 +37,7 @@ function playRound(playerSelection, computerSelection) {
   return playRoundResult;
 }
 
+// Generate 5 rounds of Rock, Paper & Scissors
 function game() {
   for (let i = 0; i < 5; i++) {
     const playerSelection = prompt("Rock, Paper or Scissors?");
